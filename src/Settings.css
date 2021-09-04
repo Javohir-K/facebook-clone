@@ -1,0 +1,37 @@
+.settings_container{
+    padding: 20px;
+    width: 100%;
+}
+
+.settings_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: start;
+    color: lightgray;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.settings_item > p{
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+.settings_item:hover{
+    background-color: #444;
+    border-radius: 10px;
+}
+a.settings_item{
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px) {
+    .settings_container{
+        padding: 0;
+    }
+    .settings_item p {
+        display: none;
+    }
+}

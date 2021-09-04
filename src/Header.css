@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #1f1f1f;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header_left, .header_middle, .header_right, .header_input, .header_info{
+    display: flex;
+    align-items: center;
+}
+
+.header_left, .header_middle, .header_right{
+    flex: 1;
+}
+
+.header_input{
+    background-color: #3a3a3a;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+.header_input input{
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.header_left> img{
+    height: 50px;
+}
+
+.header_middle{
+    padding-top: 5px;
+}
+
+.header_input > .MuiSvgIcon-root{
+    color: white;
+}
+
+.header_option > .MuiSvgIcon-root {
+    color: gray;
+    transition: all 0.4s;
+    font-size: 30px;
+}
+
+.header_option{
+    display: flex;
+    align-items: center;
+    padding: 8px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 5px;
+    transition: all 0.4s;
+    
+}
+.header_option:hover{
+    background-color: #555;
+}
+
+.header_option-active{
+    border-radius: 0;
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header_option-active > .MuiSvgIcon-root{
+    color: #2e81f4;
+}
+.header_option-active:hover{
+    background-color: transparent;
+}
+.header_info > h4{
+    color: white;
+    margin:0 10px;
+}
+
+.header_right > .MuiSvgIcon-root {
+    color: lightgray;
+}
+
+.header_middle {
+    justify-content: center;
+    flex: 2;
+}
+.header_right{
+    justify-content: flex-end;    
+}
+
+@media screen and (max-width: 900px) {
+    .header_left > img{
+        height: 30px;
+    }
+    .header_option{
+        padding: 5px 15px;
+    }
+    .header_option > .MuiSvgIcon-root {
+        font-size: x-large;
+    }
+    .header_input{
+        display: none;
+    }
+    .header_info > img {
+        /* height: 30px; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+        .header_option{
+            padding: 10px;
+        }
+        .header_info h4{
+            display: none;
+        }
+    }

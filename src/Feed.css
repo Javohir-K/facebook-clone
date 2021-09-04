@@ -1,0 +1,29 @@
+.feed{
+    /* box-sizing: border-box; */
+    display: flex;
+    /* width: 500px; */
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.feed_container{
+    padding: 20px 80px;
+    flex: 2;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+@media  screen and (max-width:900px) {
+        .feed{
+            width: 100%;
+        }
+        .feed_container{
+            padding: 20px;
+        }
+}
+
+

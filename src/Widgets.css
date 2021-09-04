@@ -1,0 +1,40 @@
+.widgets{
+    flex: 1;
+    /* width: 300px; */
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.widgets > h2{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.widgets_notf{
+    width: 100%;
+    border-top: 1px solid #555;
+    text-align: center;
+    padding: 10px 0;
+    color: lightgray;
+}
+
+@media screen and (max-width: 900px) {
+       .widgets{
+           /* display: none; */
+           flex: 0;
+       } 
+       .widgets_notf{
+           display: none;
+       }
+       h2{
+           display: none;
+       }
+}
+
+@media screen and (max-width: 500px) {
+    .widgets{
+        display: none;
+    } 
+
+}
